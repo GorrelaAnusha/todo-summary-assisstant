@@ -35,22 +35,31 @@ POST /summarize – Generate and send summary
 
 <h3>🚀 Setup Instructions</h3>
 
+  Slack Integration
+1. Go to Slack Incoming Webhooks.
+2. Create a webhook for your channel.
+3. POST the generated summary to the webhook URL.
 
+  LLM Integration
+- Use OpenAI API (create a free account).
+- Endpoint: `https://api.openai.com/v1/chat/completions`
+- Model: `gpt-3.5-turbo`
 
-1. Backend Setup (Spring Boot)<br>
-cd backend/todoapp <br>
-Run the backend server:
-    ./mvnw spring-boot:run
-  <br>
-   2. Frontend Setup (React)
-    <br>
-   cd frontend/todo-summary-frontend <br>
-   npm install <br>
-   npm start <br>
-       <br>
-    3. Access the App
+ Backend Setup (Spring Boot)<br>
+ cd backend/todoapp<br>
+./mvnw spring-boot:run
+
+ Frontend Setup (React)
 <br>
-Frontend runs on http://localhost:3000
-<br>
+cd frontend/todo-summary-frontend<br>
+npm install<br>
+npm start<br>
+
+Access the App<br>
+Frontend runs on http://localhost:3000<br>
 Backend runs on http://localhost:8080
+
+
+
+
 
